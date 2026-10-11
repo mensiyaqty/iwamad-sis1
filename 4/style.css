@@ -1,0 +1,45 @@
+/* Theme variables configuration */
+:root {
+    --bg: #ffffff;
+    --fg: #111827;
+    --card-bg: #f9fafb;
+    --border-color: #e5e7eb;
+}
+
+html[data-theme="dark"] {
+    --bg: #0b1220;
+    --fg: #e5e7eb;
+    --card-bg: #1e293b;
+    --border-color: #334155;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--fg);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Custom class bindings */
+.custom-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+}
+
+.header-border {
+    border-color: var(--border-color);
+    background-color: var(--bg);
+}
+
+.theme-btn-border {
+    border-color: var(--border-color);
+}
+
+.form-input-border {
+    border-color: var(--border-color);
+}
+
+/* Keyboard focus style for accessibility (a11y) */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+    outline: 3px solid #3b82f6;
+    outline-offset: 2px;
+}
